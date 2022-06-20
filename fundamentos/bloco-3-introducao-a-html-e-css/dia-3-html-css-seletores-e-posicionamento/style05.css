@@ -14,12 +14,19 @@ ol {
     font-weight: bolder;
 }
 
+h1,h3 {
+    color: red;
+}
 
 h1 {
-    color: red;
+    
     height: 40px;
     border: 1px solid black;
 }
-ul:nth-child(1n+0) {
+.lcod {
 color: blue;
+}
+
+.lcodJ {
+    background-color: pink;
 }
