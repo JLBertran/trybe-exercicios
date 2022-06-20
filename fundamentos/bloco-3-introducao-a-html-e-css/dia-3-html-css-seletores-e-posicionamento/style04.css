@@ -1,6 +1,7 @@
 div:nth-of-type(1) { 
     background-color: burlywood;
     border: 1px solid black;
+    font-style: italic;
 
 }
 div:nth-of-type(2) {
@@ -11,6 +12,8 @@ div:nth-of-type(2) {
 div:nth-of-type(3) {
     background-color: cornflowerblue;
     border: 1px solid black;
+    height: 85px;
+    font-style: italic;
 
 }
 div:nth-of-type(4) {
@@ -18,8 +21,9 @@ div:nth-of-type(4) {
     border: 1px solid black;
 
 }
-div:nth-of-type(5) {
+div:nth-of-type(5)  {
     background-color: brown;
     border: 1px solid black;
+    font-style: italic;
 
 }
