@@ -1,4 +1,6 @@
 
+/* atividade basica de condições if/else */
+
 const a = 22;
 const b = 17;
 
