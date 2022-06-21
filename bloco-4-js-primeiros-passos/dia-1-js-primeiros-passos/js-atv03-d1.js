@@ -1,4 +1,4 @@
-
+/* atividade basica de condições if/else */
 
 const a = 5;
 const b = 13;
