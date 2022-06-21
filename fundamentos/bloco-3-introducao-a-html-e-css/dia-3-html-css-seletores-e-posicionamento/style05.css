@@ -1,0 +1,32 @@
+li {
+    background-color: yellow;
+    height: 20px;
+}
+
+li:nth-child(odd) {
+   text-transform: uppercase;
+}
+li:nth-child(even) {
+    color: green;
+}
+
+ol {
+    font-weight: bolder;
+}
+
+h1,h3 {
+    color: red;
+}
+
+h1 {
+    
+    height: 40px;
+    border: 1px solid black;
+}
+.lcod {
+color: blue;
+}
+
+.lcodJ {
+    background-color: pink;
+}

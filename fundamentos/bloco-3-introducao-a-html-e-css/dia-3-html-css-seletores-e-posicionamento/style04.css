@@ -1,0 +1,29 @@
+div:nth-of-type(1) { 
+    background-color: burlywood;
+    border: 1px solid black;
+    font-style: italic;
+
+}
+div:nth-of-type(2) {
+    background-color: aqua;
+    border: 1px solid black;
+
+}
+div:nth-of-type(3) {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    height: 85px;
+    font-style: italic;
+
+}
+div:nth-of-type(4) {
+    background-color: darkgoldenrod;
+    border: 1px solid black;
+
+}
+div:nth-of-type(5)  {
+    background-color: brown;
+    border: 1px solid black;
+    font-style: italic;
+
+}
