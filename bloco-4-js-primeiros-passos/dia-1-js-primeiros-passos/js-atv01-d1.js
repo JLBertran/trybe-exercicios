@@ -1,6 +1,6 @@
 
-const myName = "Jean";
-const birthCity = 'São José dos Campos';
+const myName = "Jean";  
+const birthCity = 'São José dos Campos'; 
 var birthYear = 2030;
 
 console.log(myName);
