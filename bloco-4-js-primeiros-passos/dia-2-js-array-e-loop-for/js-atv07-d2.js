@@ -10,3 +10,4 @@ for (let index = 0; index < number.length; index += 1) {
 }
 
 console.log(result);
+
