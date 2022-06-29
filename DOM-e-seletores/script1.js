@@ -22,10 +22,15 @@ function exercicio4() {
 }
 exercicio4();
 
-function exercicio5 () {
-   let txtUpper = document.getElementsByTagName("p")[0];
-   txtUpper.innerHTML = txtUpper.innerHTML.toUpperCase()
+function exercicio5() {
+  let txtUpper = document.getElementsByTagName("p")[0];
+  txtUpper.innerHTML = txtUpper.innerHTML.toUpperCase();
 }
- exercicio5 ()
+exercicio5();
 
- function exercicio6 
+function exercicio6() {
+  let exibaP = document.getElementsByTagName("p");
+  for (let index in exibaP) console.log(exibaP[index].innerHTML);
+}
+
+exercicio6();
