@@ -22,4 +22,10 @@ function exercicio4() {
 }
 exercicio4();
 
-func
+function exercicio5 () {
+   let txtUpper = document.getElementsByTagName("p")[0];
+   txtUpper.innerHTML = txtUpper.innerHTML.toUpperCase()
+}
+ exercicio5 ()
+
+ function exercicio6 
