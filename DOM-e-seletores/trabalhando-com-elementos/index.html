@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -62,6 +62,7 @@
 
       let exercDOM = document.createElement("h1");
       exercDOM.innerText = "Exercício 5.2 - JavaScript DOM";
+      exercDOM.className ='title';
       body.appendChild(exercDOM);
 
       let mainContent = document.createElement("main");
@@ -70,6 +71,7 @@
 
       let centerContent = document.createElement("section");
       centerContent.className = "center-content";
+      centerContent.style.backgroundColor = 'green'
       mainContent.appendChild(centerContent);
 
       let paragrafo = document.createElement("p");
@@ -79,10 +81,12 @@
       let leftContent = document.createElement("section");
       leftContent.className = "left-content";
       mainContent.appendChild(leftContent);
+      mainContent.removeChild(leftContent)
 
       let rightContent = document.createElement("section");
       rightContent.className = "right-content";
       mainContent.appendChild(rightContent);
+      
 
       let smallImage = document.createElement("img");
       smallImage.className = "small-image";
@@ -108,12 +112,19 @@
         let elementLi = document.createElement("li");
         elementLi.innerHTML = arrayDeUmADez[index];
         listaUl.appendChild(elementLi);
+        if (elementLi.innerText.includes('Nove') || elementLi.innerText.includes('Dez') ) {
+            listaUl.removeChild(elementLi);
+
+        }
       }
 
-      for (let index = 0; index <= 3; index += 1) {
+      for (let index = 1; index <= 3; index += 1) {
         let elementH3 = document.createElement("h3");
         mainContent.appendChild(elementH3);
       }
+      elementH3.className ='description';
+
+
     </script>
   </body>
 </html>
