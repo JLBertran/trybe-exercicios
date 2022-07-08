@@ -5,60 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Header da Página</h1>
-    <form id="forms" action="" method="get">
-      <label for="inputName"
-        >Nome:
-        <input type="text" id="inputName" required />
-      </label>
-      <br />
-      <label for="inputEmail"
-        >Email:
-        <input type="email" name="email" id="inputEmail" required />
-      </label>
-      <br />
-      <label for="inputOptions"
-        >Opção 1
-        <input type="radio" name="option1" id="inputOption1" checked />
-      </label>
-      <label for="inputOptions"
-        >Opção 2
-        <input type="radio" name="option2" id="inputOptions2" />
-      </label>
-      <label for="inputOptions"
-        >Opção 3
-        <input type="radio" name="option3" id="inputOptions3" />
-      </label>
-      <label for="inputOptions"
-        >Opção 4
-        <input type="radio" name="option4" id="inputOptions4" />
-      </label>
-      <br />
-      <p>Espaço para digitar a resposta</p>
-      <textarea
-        name="caixaTxt"
-        id="inputCaixaTxt"
-        cols="55"
-        rows="10"
-      ></textarea>
-      <br />
-      <label for="inputData">
-        Data:
-        <input type="date" name="data" id="inputData" />
-      </label>
-      <br />
-      <label for="inputAgree1"
-        >Concordo 1
-        <input type="checkbox" name="agree1" id="inputAgree1" />
-      </label>
-      <br />
-      <label for="inputAgree2"
-        >Concordo 2
-        <input type="checkbox" name="agree2" id="inputAgree2" />
-      </label>
-    </form>
+    <header id="cabecalho"><h1>TrybeTrips</h1></header>
+    <main>
+      <form id="randomForm" action="" method="get">
+        <section class="formContent">
+          <div class="lineContent">
+            <label for="inputName">Nome:</label>
+            <input
+              type="text"
+              id="inputName"
+              placeholder="Digite seu nome completo"
+              name="fullname"
+              maxlength="40"
+              minlength="10"
+              required
+            />
+          </div>
+          <br />
+          <div class="lineContent">
+            <label for="inputEmail">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="inputEmail"
+              placeholder="Digite seu e-mail"
+              maxlength="50"
+              minlength="10"
+              required
+            />
+          </div>
+        </section>
+        <br />
+        <fieldset class="inputRadio">
+          <legend>Escolha uma opção de viagem</legend>
+          <input
+            type="radio"
+            name="destino"
+            id="inputOption1"
+            value="cidade"
+            required
+          />
+          <label for="inputOption1">Cidade</label>
+          <input
+            type="radio"
+            name="destino"
+            id="inputOptions2"
+            value="campo"
+            required
+          />
+          <label for="inputOptions2">Campo</label>
+          <input
+            type="radio"
+            name="destino"
+            id="inputOptions3"
+            value="praia"
+            required
+          />
+          <label for="inputOptions3">Praia</label>
+          <input
+            type="radio"
+            name="destino"
+            id="inputOptions4"
+            value="montanha"
+            required
+          />
+          <label for="inputOptions4">Montanha</label>
+        </fieldset>
+        <br />
+        <fieldset class="resposta">
+          <legend>
+            <label for="porque"
+              >Por que você deveria ser o ganhador dessa viagem
+              TrybeTrip?</label
+            >
+          </legend>
+          <textarea
+            name="porque"
+            id="inputCaixaTxt"
+            cols="78"
+            rows="10"
+            maxlength="500"
+            placeholder="Digite aqui a sua resposta"
+            required
+          ></textarea>
+        </fieldset>
+        <br />
+        <label for="inputData"> Qual a melhor data para a sua viagem?</label>
+        <input type="date" name="data" id="inputData" required />
+        <br />
+        <div class="inputCheck">
+          <input type="checkbox" name="agree1" id="inputAgree1" />
+          <label for="inputAgree1"
+            >Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?</label
+          >
+          <br />
+          <input type="checkbox" name="agree1" id="inputAgree1" />
+          <label for="inputAgree2"
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.</label
+          >
+        </div>
+        <br>
+
+        <button type="submit" id="buttonEnviar" class="buttonForm">
+          Enviar
+        </button>
+        <button type="submit" id="buttonLimpar" class="buttonForm">
+          Limpar
+        </button>
+      </form>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
