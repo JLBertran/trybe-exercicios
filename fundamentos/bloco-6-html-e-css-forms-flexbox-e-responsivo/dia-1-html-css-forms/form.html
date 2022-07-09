@@ -5,41 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--<link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
     <header id="cabecalho"><h1>TrybeTrips</h1></header>
     <main>
       <form id="randomForm" action="" method="get">
-        <section class="formContent">
-          <div class="lineContent">
-            <label for="inputName">Nome:</label>
-            <input
-              type="text"
-              id="inputName"
-              placeholder="Digite seu nome completo"
-              name="fullname"
-              maxlength="40"
-              minlength="10"
-              required
-            />
-          </div>
-          <br />
-          <div class="lineContent">
-            <label for="inputEmail">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id="inputEmail"
-              placeholder="Digite seu e-mail"
-              maxlength="50"
-              minlength="10"
-              required
-            />
-          </div>
-        </section>
+        <div class=".*">
+          <label for="inputName">Nome:</label>
+          <input
+            type="text"
+            id="inputName"
+            placeholder="Digite seu nome completo"
+            name="fullname"
+            maxlength="40"
+            minlength="10"
+            required
+          />
+        </div>
         <br />
-        <fieldset class="inputRadio">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <br />
+        <fieldset class=".*">
           <legend>Escolha uma opção de viagem</legend>
           <input
             type="radio"
@@ -75,7 +83,7 @@
           <label for="inputOptions4">Montanha</label>
         </fieldset>
         <br />
-        <fieldset class="resposta">
+        <fieldset class=".*">
           <legend>
             <label for="porque"
               >Por que você deveria ser o ganhador dessa viagem
@@ -96,7 +104,7 @@
         <label for="inputData"> Qual a melhor data para a sua viagem?</label>
         <input type="date" name="data" id="inputData" required />
         <br />
-        <div class="inputCheck">
+        <div class=".*">
           <input type="checkbox" name="agree1" id="inputAgree1" />
           <label for="inputAgree1"
             >Gostaria de receber outras incríveis oportunidades oferecidas pela
@@ -109,14 +117,10 @@
             divulgação de concursos futuros.</label
           >
         </div>
-        <br>
+        <br />
 
-        <button type="submit" id="buttonEnviar" class="buttonForm">
-          Enviar
-        </button>
-        <button type="submit" id="buttonLimpar" class="buttonForm">
-          Limpar
-        </button>
+        <button type="submit" id="buttonEnviar" class=".*">Enviar</button>
+        <button type="submit" id="buttonLimpar" class=".*">Limpar</button>
       </form>
     </main>
     <script src="script.js"></script>
