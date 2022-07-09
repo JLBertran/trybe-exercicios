@@ -13,18 +13,20 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="">
     <header
       class="container text-center border border-dark border p-2 mb-2 border-opacity-10 border-3 rounded mt-2 p-3"
     >
-      <h1 class=" display-3">TrybeTrips</h1>
+      <h1 class="display-3">TrybeTrips</h1>
     </header>
     <main
       class="container border border-dark border p-2 mb-2 border-opacity-10 border-3 rounded mt-1 p-5"
     >
       <form id="randomForm" action="" method="get">
-        <div class="form-label">
-          <label for="inputName" class="form-label">Nome:</label>
+        <div class="mb-3">
+          <label for="inputName" class="form-label fw-lighter fs-6"
+            >Nome:</label
+          >
           <input
             type="text"
             class="form-control"
@@ -38,7 +40,7 @@
         </div>
         <br />
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
+          <label for="InputEmail1" class="form-label fw-lighter fs-6"
             >Endereço de e-mail:</label
           >
           <input
@@ -53,8 +55,10 @@
         </div>
 
         <br />
-        <fieldset class=".*">
-          <legend>Escolha uma opção de viagem</legend>
+        <fieldset class="mb-3">
+          <legend class="form-label fs-3 fw-normal">
+            Escolha uma opção de viagem
+          </legend>
           <input
             type="radio"
             name="destino"
@@ -62,7 +66,7 @@
             value="cidade"
             required
           />
-          <label for="inputOption1">Cidade</label>
+          <label for="inputOption1" class="fw-lighter fs-6">Cidade</label>
           <input
             type="radio"
             name="destino"
@@ -70,7 +74,7 @@
             value="campo"
             required
           />
-          <label for="inputOptions2">Campo</label>
+          <label for="inputOptions2" class="fw-lighter fs-6">Campo</label>
           <input
             type="radio"
             name="destino"
@@ -78,7 +82,7 @@
             value="praia"
             required
           />
-          <label for="inputOptions3">Praia</label>
+          <label for="inputOptions3" class="fw-lighter fs-6">Praia</label>
           <input
             type="radio"
             name="destino"
@@ -86,18 +90,19 @@
             value="montanha"
             required
           />
-          <label for="inputOptions4">Montanha</label>
+          <label for="inputOptions4" class="fw-lighter fs-6">Montanha</label>
         </fieldset>
         <br />
-        <fieldset class=".*">
+        <div class="mb-3">
           <legend>
-            <label for="porque"
+            <label for="porque" class="form-label fs-6 fw-semibold"
               >Por que você deveria ser o ganhador dessa viagem
               TrybeTrip?</label
             >
           </legend>
           <textarea
             name="porque"
+            class="form-control"
             id="inputCaixaTxt"
             cols="78"
             rows="10"
@@ -105,20 +110,34 @@
             placeholder="Digite aqui a sua resposta"
             required
           ></textarea>
-        </fieldset>
+        </div>
         <br />
-        <label for="inputData"> Qual a melhor data para a sua viagem?</label>
-        <input type="date" name="data" id="inputData" required />
+        <label for="inputData" class="fw-lighter fs-6">
+          Qual a melhor data para a sua viagem?</label
+        >
+        <input
+          type="date"
+          name="data"
+          id="inputData"
+          class="rounded border border-2 text-center"
+          required
+        />
         <br />
-        <div class=".*">
-          <input type="checkbox" name="agree1" id="inputAgree1" />
-          <label for="inputAgree1"
+        <div class="mb-3">
+          <input type="checkbox" name="check1" id="inputAgree1" />
+          <label
+            for="inputAgree1"
+            class="fw-lighter lh-1 p-2 md-2"
+            id="textfontSmall"
             >Gostaria de receber outras incríveis oportunidades oferecidas pela
             Trybe?</label
           >
           <br />
-          <input type="checkbox" name="agree1" id="inputAgree1" />
-          <label for="inputAgree2"
+          <input type="checkbox" name="check1" id="inputAgree2" />
+          <label
+            for="inputAgree2"
+            class="fw-lighter lh-1 p-2 md-2"
+            id="textfontSmall"
             >Concordo que imagens das minhas férias poderão ser usadas na
             divulgação de concursos futuros.</label
           >
@@ -128,14 +147,14 @@
         <button
           type="submit"
           id="buttonEnviar"
-          class="border border-2 rounded-pill border-success border-opacity-50"
+          class="rounded border border-2 text-center btn btn-light"
         >
           Enviar
         </button>
         <button
           type="submit"
           id="buttonLimpar"
-          class="border border-2 rounded-pill border-success border-opacity-50"
+          class="rounded border border-2 text-center btn btn-light"
         >
           Limpar
         </button>
